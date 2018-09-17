@@ -1,16 +1,17 @@
 require("dotenv").config();
+var keys = require("./keys.js");
 var request = require("request");
 var moment = require('moment');
 var fs = require("fs");
 var Spotify = require("node-spotify-api");
 
-var keys = require("./keys.js");
 var spotify = new Spotify(keys.spotify);
 
 // console.log(spotify);
 
 var option = process.argv[2];
 var userInput = process.argv.splice(3).join(" ");
+var dataToSave = "";
 
 switch(option) {
     case "concert-this":
@@ -18,7 +19,8 @@ switch(option) {
         break;
 
     case "spotify-this-song":
-    break;
+        getSongInfo();
+        break;
      
     case "movie-this":
         getMovieInfo();
@@ -36,6 +38,7 @@ switch(option) {
                     getVenueInfo();
                     break;
                 case "spotify-this-song":
+                    getSongInfo();
                     break;
      
                 case "movie-this":
@@ -43,7 +46,6 @@ switch(option) {
                     break;
             }
         })
-        
         break;
 }
 
@@ -85,9 +87,9 @@ function getMovieInfo() {
                 if (info.Ratings[i].Source === "Rotten Tomatoes") {
                     console.log("* Rotten Tomatoes Rating: " + info.Ratings[i].Value);
                 }
-                // else {
-                //     console.log("No Rotten Tomatoes Rating available");
-                // }
+                else {
+                    console.log("No Rotten Tomatoes Rating available");
+                }
             }
             console.log("* Country: " + info.Country);
             console.log("* Language: " + info.Language);
@@ -95,4 +97,25 @@ function getMovieInfo() {
             console.log("* Actors: " + info.Actors);
         })
     }
+}
+
+function getSongInfo() {
+    spotify.search({ type: 'track', query: userInput, limit: 1}, function(error, data) {
+        // console.log(data);
+        var obj = data.tracks.items[0];
+        // console.log(obj);
+        console.log("* Artist: " + obj.artists[0].name);
+        console.log("* Song: " + obj.name);
+        console.log("* Album: " + obj.album.name);
+        if(obj.preview_url !== null) {
+            console.log("* Song Preview: " + obj.preview_url);  
+        }
+        else {
+            console.log("No song preview available")
+        }
+    })
+}
+
+function saveInfo(data) {
+    fs.appendFile("log.txt", data, function(error){})
 }
