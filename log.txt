@@ -1,0 +1,69 @@
+Get venue info: miguel
+Venue: Cal Coast Credit Union Open Air Theatre
+Location: San Diego, CA
+Time: 09/17/2018
+
+Venue: Greek Theatre
+Location: Los Angeles, CA
+Time: 09/19/2018
+
+Venue: Event Center at San Jose State University
+Location: San Jose, CA
+Time: 09/20/2018
+
+Venue: Santa Barbara Bowl
+Location: Santa Barbara, CA
+Time: 09/21/2018
+
+Venue: Life Is Beautiful Festival
+Location: Las Vegas, NV
+Time: 09/22/2018
+
+Venue: Cuthbert Amphitheater
+Location: Eugene, OR
+Time: 09/24/2018
+
+Venue: Arlene Schnitzer Concert Hall
+Location: Portland, OR
+Time: 09/25/2018
+
+Venue: Doug Mitchell Thunderbird Sports Centre
+Location: Vancouver, Canada
+Time: 09/27/2018
+
+Venue: WaMu Theater
+Location: Seattle, WA
+Time: 09/28/2018
+
+-----------------------------------------------------------------------------------------------
+
+Get song info: stand by me
+* Artist: Ben E. King
+* Song: Stand By Me
+* Album: Don't Play That Song (Mono)
+* Song Preview: https://p.scdn.co/mp3-preview/cdc0401bbc4a03b855d9dd820fdf680917865dba?cid=401f24c4ede848d494ddc681e6ce03d6
+-----------------------------------------------------------------------------------------------
+
+Get movie info: 
+* If you haven't watched 'Mr. Nobody,' then you should: http://www.imdb.com/title/tt0485947/ 
+* It's on Netflix!
+-----------------------------------------------------------------------------------------------
+
+Get movie info: zombieland
+* Title: Zombieland
+* Year: 2009
+* IMDB Rating: 7.7
+* Rotten Tomatoes Rating: 90%
+* Country: USA
+* Language: English
+* Plot: A shy student trying to reach his family in Ohio, a gun-toting tough guy trying to find the last Twinkie, and a pair of sisters trying to get to an amusement park join forces to travel across a zombie-filled America.
+* Actors: Jesse Eisenberg, Woody Harrelson, Emma Stone, Abigail Breslin
+-----------------------------------------------------------------------------------------------
+
+spotify-this-song,"I Want it That Way"
+* Artist: Backstreet Boys
+* Song: I Want It That Way
+* Album: The Hits--Chapter One
+* Song Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=401f24c4ede848d494ddc681e6ce03d6
+-----------------------------------------------------------------------------------------------
+
